@@ -5,7 +5,7 @@
 
 本人把项目移植到 `android studio`
 
-直接下载:
+直接下载: [**点我下载**](https://github.com/jp1017/AndroidSerialPortSample/releases/tag/v1.1)
 
 测试的话，需要有自己开发板，现在一般手机都没有预留的串口
 
