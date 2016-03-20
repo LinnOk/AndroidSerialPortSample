@@ -21,7 +21,7 @@ import java.io.IOException;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import android_serialport_api.sample.R;
+import io.github.jp1017.android_serial_port.R;
 
 public class LoopbackActivity extends SerialPortActivity {
 

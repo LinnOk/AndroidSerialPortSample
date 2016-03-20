@@ -16,29 +16,35 @@
 
 package io.github.jp1017.android_serial_port.sample;
 
+import android.content.SharedPreferences;
+import android.util.Log;
+
 import java.io.File;
 import java.io.IOException;
 import java.security.InvalidParameterException;
 
-
-import android.content.SharedPreferences;
 import io.github.jp1017.android_serial_port.SerialPort;
 import io.github.jp1017.android_serial_port.SerialPortFinder;
 
 public class Application extends android.app.Application {
+    private final static String TAG = "LOOO";
 
 	public SerialPortFinder mSerialPortFinder = new SerialPortFinder();
 	private SerialPort mSerialPort = null;
 
 	public SerialPort getSerialPort() throws SecurityException, IOException, InvalidParameterException {
 		if (mSerialPort == null) {
-			/* Read serial port parameters */
-			SharedPreferences sp = getSharedPreferences("android_serialport_api.sample_preferences", MODE_PRIVATE);
-			String path = sp.getString("DEVICE", "");
-			int baudrate = Integer.decode(sp.getString("BAUDRATE", "-1"));
+            /* Read serial port parameters */
+            SharedPreferences sp = getSharedPreferences("io.github.jp1017.android_serial_port_preferences", MODE_PRIVATE);
+
+            String path = sp.getString("DEVICE", "");
+
+            int baudrate = Integer.decode(sp.getString("BAUDRATE", "-1"));
 
 			/* Check parameters */
-			if ( (path.length() == 0) || (baudrate == -1)) {
+            Log.i(TAG, "length: " + path.length() + "baudrate: " + baudrate);
+
+            if ( (path.length() == 0) || (baudrate == -1)) {
 				throw new InvalidParameterException();
 			}
 

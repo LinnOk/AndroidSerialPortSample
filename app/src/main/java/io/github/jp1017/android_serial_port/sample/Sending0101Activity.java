@@ -21,7 +21,7 @@ import java.util.Arrays;
 
 import android.os.Bundle;
 
-import android_serialport_api.sample.R;
+import io.github.jp1017.android_serial_port.R;
 
 public class Sending0101Activity extends SerialPortActivity {
 

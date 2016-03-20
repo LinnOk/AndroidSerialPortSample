@@ -16,15 +16,15 @@
 
 package io.github.jp1017.android_serial_port.sample;
 
-import java.io.IOException;
-
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import android_serialport_api.sample.R;
+import java.io.IOException;
+
+import io.github.jp1017.android_serial_port.R;
 
 
 public class ConsoleActivity extends SerialPortActivity {
