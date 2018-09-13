@@ -10,4 +10,4 @@
 测试的话，需要有自己开发板，现在一般手机都没有预留的串口
 
 <img src="https://cloud.githubusercontent.com/assets/7868514/13865806/7b5fb4d4-ecea-11e5-86fc-e598e7ad0651.png" width="320" />
-<img src="https://upload-images.jianshu.io/upload_images/678268-311edfc297159899.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/471/format/webp" />
+<img src="https://pan.baidu.com/s/13CR7HphIW6cLhkMsF6oqDQ" />
